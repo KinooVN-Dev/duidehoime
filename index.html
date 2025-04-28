@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Duidehoime Minecraft</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>🌟 Duidehoime Minecraft 🌟</h1>
+    <p class="slogan">Trải nghiệm Survival đỉnh cao - Cộng đồng thân thiện!</p>
+    <div class="ip-container">
+      <input type="text" id="server-ip" value="duidehoime.store" readonly>
+      <button onclick="copyIP()">Copy IP</button>
+    </div>
+  </header>
+
+  <section class="intro">
+    <h2>🌍 Giới thiệu Server</h2>
+    <ul>
+      <li>✅ Máy chủ Survival thuần cổ điển kết hợp công nghệ hiện đại.</li>
+      <li>✅ Sự kiện diễn ra hàng tuần với phần thưởng hấp dẫn.</li>
+      <li>✅ Hệ thống Update liên tục, tính năng mới siêu cuốn.</li>
+      <li>✅ Đội ngũ Admin hỗ trợ nhanh chóng, nhiệt tình.</li>
+      <li>✅ Cộng đồng người chơi thân thiện, vui vẻ, hòa đồng.</li>
+    </ul>
+  </section>
+
+  <section class="navigation">
+    <h2>🚀 Khám phá thêm</h2>
+    <div class="nav-buttons">
+      <a href="rules.html">📜 Nội Quy</a>
+      <a href="laws.html">⚖️ Luật Lệ</a>
+      <a href="activities.html">🎉 Hoạt Động</a>
+      <a href="updates.html">🛠️ Cập Nhật</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>Duidehoime Minecraft © 2025 - Chúng tôi mang đến trải nghiệm tốt nhất cho bạn!</p>
+  </footer>
+
+  <script>
+    function copyIP() {
+      var copyText = document.getElementById("server-ip");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      document.execCommand("copy");
+      alert("Đã copy IP: " + copyText.value);
+    }
+  </script>
+
+<script src="https://static.app/js/static.js" type="text/javascript"></script>
+</body>
+</html>
